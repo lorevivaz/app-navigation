@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, TextInput,View, Button, ScrollView } from 'react-native';
+import {  Text, TextInput,View, Button, ScrollView } from 'react-native';
 import React, { useEffect, useState } from 'react';
 
 import styles from '../style/style.js';
