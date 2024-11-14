@@ -60,7 +60,8 @@ export default function ProfileForm({ user, onInputChange, onSave }) {
                 keyboardType="numeric"
             />
 
-            <Button title="Save" onPress={onSave} />
+           <Button title="Salva" onPress={onSave} color="#32cd32" />
+            
         </View>
         </ScrollView>
     );

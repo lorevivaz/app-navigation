@@ -60,4 +60,5 @@ export default styles = StyleSheet.create({
         color: '#424242',
         marginLeft: 10,
     },
+    
 });
