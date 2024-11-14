@@ -60,5 +60,22 @@ export default styles = StyleSheet.create({
         color: '#424242',
         marginLeft: 10,
     },
+
+    customButton: {
+        backgroundColor: '#32cd32', // verde lime per richiamare l'idea di delivery
+        paddingVertical: 12,
+        paddingHorizontal: 20,
+        borderRadius: 5,
+        alignItems: 'center',
+        marginTop: 10,
+        alignSelf: 'center',
+    },
+    customButtonText: {
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
+
     
+
 });

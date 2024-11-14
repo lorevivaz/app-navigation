@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TextInput, View, Button, ScrollView } from 'react-native';
+import { Text, TextInput, View, ScrollView, TouchableOpacity } from 'react-native';
 
 import styles from '../style/styles.js';
 
@@ -60,7 +60,15 @@ export default function ProfileForm({ user, onInputChange, onSave }) {
                 keyboardType="numeric"
             />
 
-           <Button title="Salva" onPress={onSave} color="#32cd32" />
+        
+
+           <TouchableOpacity 
+                style={styles.customButton}
+                onPress={onSave}
+            >
+                <Text style={styles.customButtonText}>Salva</Text>
+            </TouchableOpacity>
+
             
         </View>
         </ScrollView>

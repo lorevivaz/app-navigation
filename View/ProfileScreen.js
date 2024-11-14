@@ -23,6 +23,9 @@ export default function ProfileScreen() {
 
   const [isEditing, setIsEditing] = useState(false); // Stato per gestire la modalità di modifica del profilo
 
+
+  // Dati dell'utente da visualizzare nella schermata del profilo
+  // ossia il nome, il cognome e il nome completo della carta
   const data = [
     { id: '1', label: 'First Name', value: user.firstName },
     { id: '2', label: 'Last Name', value: user.lastName },
