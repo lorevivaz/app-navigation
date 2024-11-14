@@ -42,7 +42,7 @@ export default function App() {
 
         <Tab.Screen name="Home" component={HomeScreen} options={{ title: 'Home Page' }} />
         <Tab.Screen name="Details" component={DetailsScreen} options={{ title: 'Details Page' }} />
-        <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile Page' }} />
+        <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profilo' }} />
 
       </Tab.Navigator>
     </NavigationContainer>

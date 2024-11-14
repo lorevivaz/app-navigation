@@ -2,7 +2,7 @@
 import {  Text, TextInput,View, Button, ScrollView } from 'react-native';
 import React, { useEffect, useState } from 'react';
 
-import styles from '../style/style.js';
+import styles from '../style/styles.js';
 
 import {fetchData, updateUserData} from '../viewmodel/appViewmodel.js';
 
