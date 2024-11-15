@@ -14,8 +14,8 @@ export default function ProfileScreen() {
       lastName: "",
       cardFullName: "",
       cardNumber: "",
-      cardExpireMonth: "",
-      cardExpireYear: "",
+      cardExpireMonth: 0,
+      cardExpireYear: 0,
       cardCVV: ""
   });
 
