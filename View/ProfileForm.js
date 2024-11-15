@@ -4,7 +4,9 @@ import { Text, TextInput, View, ScrollView, TouchableOpacity } from 'react-nativ
 import styles from '../style/styles.js';
 
 export default function ProfileForm({ user, onInputChange, onSave }) {
+  console.log("ProfileForm called with user: ", user);
     return (
+
         <ScrollView contentContainerStyle={styles.scrollView}>
         <View>
             <Text style={styles.label}>First Name:</Text>
@@ -39,7 +41,7 @@ export default function ProfileForm({ user, onInputChange, onSave }) {
             <Text style={styles.label}>Card Expire Month:</Text>
             <TextInput
                 style={styles.input}
-                value={user.cardExpireMonth}
+                value={"" + user.cardExpireMonth}
                 onChangeText={(text) => onInputChange('cardExpireMonth', text)}
                 keyboardType="numeric"
             />
@@ -47,7 +49,7 @@ export default function ProfileForm({ user, onInputChange, onSave }) {
             <Text style={styles.label}>Card Expire Year:</Text>
             <TextInput
                 style={styles.input}
-                value={user.cardExpireYear}
+                value={""+ user.cardExpireYear}
                 onChangeText={(text) => onInputChange('cardExpireYear', text)}
                 keyboardType="numeric"
             />
