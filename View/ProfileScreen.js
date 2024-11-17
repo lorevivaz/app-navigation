@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import styles from '../style/styles.js';
 import ProfileForm from './ProfileForm';
 
-import { fetchData, updateUserData } from '../viewmodel/appViewmodel';
+import { fetchData, updateUserData, retrieveSidAndUid  } from '../viewmodel/appViewmodel';
 
 export default function ProfileScreen() {
   
@@ -21,6 +21,7 @@ export default function ProfileScreen() {
 
 
 
+
   const [isEditing, setIsEditing] = useState(false); // Stato per gestire la modalità di modifica del profilo
 
 
@@ -33,6 +34,8 @@ export default function ProfileScreen() {
   ];
 
   useEffect(() => {
+
+
     fetchData(38).then((data) => {
       if (data) {
         setUser({
@@ -47,6 +50,8 @@ export default function ProfileScreen() {
       }
     });
   }, []);
+
+
 
   // Funzione per gestire l'input dell'utente e aggiornare lo stato dell'utente
   const handleInputChange = (field, value) => {

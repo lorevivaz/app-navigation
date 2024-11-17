@@ -4,7 +4,7 @@ class CommunicationController {
 
     static BASE_URL = "https://develop.ewlab.di.unimi.it/mc/2425/"; // URL base per le chiamate API
 
-    static sid = "iBKUDzbXbpGMXV9wo2msRF7guByRgM6qFvvZTsIUktmD132PlhZWZPzFBkHhRjI2" ;
+  static sid = "iBKUDzbXbpGMXV9wo2msRF7guByRgM6qFvvZTsIUktmD132PlhZWZPzFBkHhRjI2" ;
 
 
     static async genericRequest(endpoint, verb, queryParams , bodyParams ) {
@@ -46,7 +46,6 @@ class CommunicationController {
             throw error;
         }
     }
-
 
     static async getUser(uid){
 

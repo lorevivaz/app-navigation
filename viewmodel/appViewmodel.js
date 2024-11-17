@@ -1,10 +1,6 @@
+
 // appViewmodel.js è il viewmodel 
-
-
-import CommunicationController from "../model/CommunicationController";
-
-
-
+import CommunicationController from '../model/CommunicationController';
 
 // Questa funzione effettua una richiesta GET al server per ottenere i dati dell'utente con l'uid specificato
 // e restituisce i dati dell'utente se la richiesta ha successo o null altrimenti
